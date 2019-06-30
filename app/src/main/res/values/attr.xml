@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="rowSpacing" format="dimension" />
+    <attr name="numberOfColumns" format="integer" />
+
+    <declare-styleable name="FlowLayout">
+        <attr name="rowSpacing" />
+        <attr name="numberOfColumns" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowRadioGroup">
+        <attr name="rowSpacing" />
+        <attr name="numberOfColumns" />
+    </declare-styleable>
+
+</resources>
