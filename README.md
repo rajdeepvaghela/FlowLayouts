@@ -22,6 +22,7 @@ dependencies {
 }
 ```
 ## Usage
+![FlowLayout1](screenshots/flow_layout_1.png)
 ```xml
     <com.rdapps.flowlayouts.FlowLayout
         android:layout_width="match_parent"
@@ -60,7 +61,10 @@ dependencies {
 
     </com.rdapps.flowlayouts.FlowLayout>
 ```
+---
 If you want fixed number of columns
+
+![FlowLayout2](screenshots/flow_layout_2.png)
 ```xml
     <com.rdapps.flowlayouts.FlowLayout
         android:layout_width="match_parent"
@@ -95,7 +99,10 @@ If you want fixed number of columns
 
     </com.rdapps.flowlayouts.FlowLayout>
 ```
+---
 For RadioButtons use `FlowRadioGroup`
+
+![FlowRadioGroup](screenshots/flow_radio_group.png)
 ```xml
     <com.rdapps.flowlayouts.FlowRadioGroup
         android:layout_width="match_parent"
