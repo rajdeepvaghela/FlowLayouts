@@ -3,11 +3,7 @@
 [![Release](https://img.shields.io/github/v/release/rajdeepvaghela/FlowLayouts)](https://github.com/rajdeepvaghela/FlowLayouts/releases)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-FlowLayout and FlowRadioGroup will replicate the FlowLayout from the Java Sprint. 
-
-<div align="center">
-<img src="motion_demo.gif" />
-</div>
+This layouts will replicate the FlowLayout behaviour from CSS and Java Spring. For normal view you can use `FlowLayout` and for RadioButtons you can use `FlowRadioGroup`
 
 ## Installation
 Add it in your root build.gradle at the end of repositories:
@@ -30,8 +26,6 @@ dependencies {
     <com.rdapps.flowlayouts.FlowLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:rowSpacing="10dp">
 
         <View
@@ -65,6 +59,74 @@ dependencies {
             android:background="@android:color/holo_blue_bright" />
 
     </com.rdapps.flowlayouts.FlowLayout>
+```
+If you want fixed number of columns
+```xml
+    <com.rdapps.flowlayouts.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:numberOfColumns="3"
+        app:rowSpacing="10dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@android:color/darker_gray" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_orange_dark" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_purple" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_bright" />
+
+    </com.rdapps.flowlayouts.FlowLayout>
+```
+For RadioButtons use `FlowRadioGroup`
+```xml
+    <com.rdapps.flowlayouts.FlowRadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:numberOfColumns="3">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Option 1" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Option 2" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Option 3" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Option 4" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Option 5" />
+    </com.rdapps.flowlayouts.FlowRadioGroup>
 ```
 
 ## License
